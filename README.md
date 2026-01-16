@@ -42,7 +42,7 @@ This dataset meets requirements for public data sharing under applicable privacy
 
 Juan David Gutiérrez  
 
-## libraries
+## Libraries
 
 pandas; dowhy; econml; statsmodels; arviz; matplolib; zepid; scipy; scikit-learn; plotnine
 EValue
