@@ -325,22 +325,22 @@ print(cate_plot)
 
 # Random common cause
 random_std = model_mining.refute_estimate(identified_estimand_mining, causal_estimate_std,
-                                         method_name="random_common_cause", random_state=123, num_simulations=10)
+                                         method_name="random_common_cause", random_state=123, num_simulations=50)
 print(random_std)
 
 # Data subset refuter
 subset_std = model_mining.refute_estimate(identified_estimand_mining, causal_estimate_std,
-                                          method_name="data_subset_refuter", subset_fraction=0.1, random_state=123, num_simulations=10)
+                                          method_name="data_subset_refuter", subset_fraction=0.1, random_state=123, num_simulations=50)
 print(subset_std) 
       
 # Bootstrap refuter
 bootstrap_std = model_mining.refute_estimate(identified_estimand_mining, causal_estimate_std,
-                                             method_name="bootstrap_refuter", random_state=123, num_simulations=10)
+                                             method_name="bootstrap_refuter", random_state=123, num_simulations=50)
 print(bootstrap_std)
 
 # Placebo treatment refuter
 placebo_std = model_mining.refute_estimate(identified_estimand_mining, causal_estimate_std,
-                                           method_name="placebo_treatment_refuter", placebo_type="permute", random_state=123, num_simulations=10)
+                                           method_name="placebo_treatment_refuter", placebo_type="permute", random_state=123, num_simulations=50)
 print(placebo_std)    
 
 
